@@ -1,0 +1,82 @@
+@font-face {
+    font-family: 'square721_ex_btroman';
+    src: url('square_721_extended_bt-webfont.woff2') format('woff2'),
+         url('square_721_extended_bt-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+body {
+	background-image: linear-gradient(to top, #dce35b, #45b649);
+	height: 100vh;
+	overflow-y: hidden;
+}
+
+.container {
+	display: grid;
+	gap: 2px;
+	margin: auto;
+	max-width: 400px;
+	grid-template-columns: repeat(4, 1fr);
+	align-items: center;
+	
+}
+
+.buttons {
+	background: conic-gradient(
+				  #d7d7d7, #c3c3c3, #cccccc, #c6c6c6, 
+				  #d3d3d3, #d8d8d8, #d5d5d5, #d8d8d8, 
+				  #d3d3d3, #c5c5c5, #c0c0c0, #bfbfbf, 
+				  #d0d0d0, #d9d9d9, #d1d1d1, #c5c5c5, 
+				  #c8c8c8, #d7d7d7, #d5d5d5, #cdcdcd, 
+				  #c4c4c4, #d9d9d9, #cecece, #c5c5c5, 
+				  #c5c5c5, #cdcdcd, #d8d8d8, #d9d9d9, 
+				  #d7d7d7) content-box, 
+			linear-gradient(#d4d4d4, #d4d4d4);
+	color: white;
+	border: 1px solid #00aa00;
+	font-family: noto;
+	font-size: 3rem;
+	text-align: center;	
+	justify-content: center;
+	height: 75px;
+}
+
+.buttons:hover {
+	background: conic-gradient(
+				  #e6c9bf, #d2b5aa, #cbaea3, #d4b5ab, 
+				  #e5c3bd, #d9c0b4, #d9bcb1, #c5a399, 
+				  #e3c6bc, #e7cac0, #dec0b5, #d3b6ab, 
+				  #cfada1, #d4b6ac, #e2c6c0, #e2c6c0, 
+				  #d2b1a6, #d2b1a6, #d1b4a9, #e1c4ba, 
+				  #e5c9be, #dec1b6, #d3b6ab, #ceb0a6, 
+				  #cfada3, #d2b5aa, #dabdb2, #e5c9be, 
+				  #e6c9bf) content-box, 
+			linear-gradient(#e5c9be, #e5c9be);
+}
+
+.display {
+	grid-column: 1 / 5;
+	background: #10710c;
+	color: white;
+	font-size: 2.5rem;
+	font-family:  "square721_ex_btroman";
+	text-align: right;
+	padding-right: 9px;
+	padding-top: 50px;
+	border: 2px solid blue;
+	height: 100px;
+}
+
+.all-clear {
+	grid-column: 1 / 3;
+}
+
+.backspace {
+	grid-column: 3 / 5;
+	font-family: "fontawesome";
+}
+
+.equals {
+	grid-column: 2 / 4;
+}
